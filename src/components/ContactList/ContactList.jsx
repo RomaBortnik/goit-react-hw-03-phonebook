@@ -10,7 +10,7 @@ const ContactList = ({ filteredContactsList, deleteContact }) => {
         const { name, number, id } = contact;
         return (
           <ContactListItem
-            key={name}
+            key={id}
             name={name}
             number={number}
             id={id}

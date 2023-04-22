@@ -74,10 +74,7 @@ export class App extends Component {
     return (
       <>
         <h1 className="title">Phonebook</h1>
-        <ContactForm
-          contacts={contacts}
-          addContact={this.addContact}
-        ></ContactForm>
+        <ContactForm addContact={this.addContact}></ContactForm>
         <h2 className="title">Contacts</h2>
         <Filter onChange={this.handleFilterChange}></Filter>
         <ContactList
