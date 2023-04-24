@@ -9,6 +9,10 @@ class ContactForm extends Component {
     number: '',
   };
 
+  static propTypes = {
+    addContact: PropTypes.func.isRequired,
+  };
+
   handleChange = event => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
@@ -70,9 +74,5 @@ class ContactForm extends Component {
     );
   }
 }
-
-ContactForm.propTypes = {
-  addContact: PropTypes.func.isRequired,
-};
 
 export default ContactForm;
