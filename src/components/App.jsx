@@ -69,7 +69,6 @@ export class App extends Component {
   };
 
   render() {
-    const { contacts } = this.state;
     const filteredContactsList = this.contactsListFilter();
     return (
       <>
